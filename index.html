@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wewith — Homepage</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      background: #f5ede3;
+      color: #4a3f35;
+      line-height: 1.7;
+      opacity: 0;
+      animation: fadeIn 0.6s ease forwards;
+    }
+
+    @keyframes fadeIn { to { opacity: 1; } }
+
+    header {
+      padding: 70px 20px 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 44px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #3c332c;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      max-width: 620px;
+      margin: auto;
+      opacity: 0.8;
+    }
+
+    .section {
+      max-width: 920px;
+      margin: 70px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #3a322b;
+    }
+
+    .desc {
+      max-width: 600px;
+      font-size: 16px;
+      opacity: 0.8;
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #fffaf3;
+      padding: 26px;
+      border-radius: 18px;
+      border: 1px solid #e8dfd2;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+      transition: 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      color: #3b332c;
+    }
+
+    .card p {
+      font-size: 15px;
+      opacity: 0.85;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 18px;
+      font-size: 14px;
+      opacity: 0.75;
+      transition: 0.2s ease;
+    }
+
+    .cta:hover {
+      opacity: 1;
+      transform: translateX(2px);
+    }
+
+    .cta-main {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 26px;
+      border-radius: 30px;
+      background: #3c332c;
+      color: #f5ede3;
+      font-size: 15px;
+      transition: 0.25s ease;
+    }
+
+    .cta-main:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px 40px;
+      font-size: 14px;
+      opacity: 0.65;
+    }
+
+    a { color: inherit; text-decoration: none; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Wewith Project</h1>
+  <p class="subtitle">
+    Ruang digital untuk merawat dan meninggalkan makna hubungan manusia —
+    lewat narasi, permainan kecil, dan refleksi yang jujur.
+  </p>
+</header>
+
+<!-- CORE -->
+<div class="section">
+  <h2>Silaturahmi Series</h2>
+  <p class="desc">
+    Kumpulan narasi emosional, interaksi hangat, dan aset digital yang timeless.
+  </p>
+
+  <div class="grid">
+
+    <a href="https://wewith.github.io/silahturahmi/" class="card">
+      <h3>📖 Narasi</h3>
+      <p>
+        Seri narasi seperti <em>Ngopi Yuk</em>, <em>Nyolong Yuk</em>, dan lainnya.
+        Ditulis untuk dibaca pelan, lalu dikirim ke orang yang kamu ingat.
+      </p>
+      <span class="cta">Baca narasinya →</span>
+    </a>
+
+    <a href="https://wewith.github.io/flashcard/" class="card">
+      <h3>🃏 Flashcard</h3>
+      <p>
+        Permainan kartu reflektif.
+        Cocok dimainkan sendiri atau bareng, tanpa harus jago ngomong.
+      </p>
+      <span class="cta">Mainkan kartu →</span>
+    </a>
+
+    <a href="https://wewith.github.io/quiz/" class="card">
+      <h3>🪞 Quiz</h3>
+      <p>
+        Bukan tes kepribadian.
+        Tapi cermin kecil untuk melihat: siapa yang sebenarnya ingin kamu samperin.
+      </p>
+      <span class="cta">Mulai refleksi →</span>
+    </a>
+
+  </div>
+</div>
+
+<!-- CUSTOM EXPERIENCE -->
+<div class="section">
+  <h2>Custom Experience</h2>
+  <p class="desc">
+    Kadang yang ingin disampaikan, dimainkan, atau direnungkan
+    butuh bentuk yang lebih personal.
+    Wewith menyediakan beberapa cara.
+  </p>
+
+  <div class="grid">
+
+    <!-- CUSTOM TRIBUTE -->
+<a id="customTribute" class="card" href="javascript:void(0)">
+  <h3>✍️ Tribute Personal</h3>
+  <p>
+    Narasi khusus untuk seseorang atau momen tertentu.
+    Cocok untuk keluarga, sahabat, atau hubungan yang sulit diucapkan langsung.
+  </p>
+  <span class="cta">Bikin tribute →</span>
+</a>
+
+<!-- CUSTOM FLASHCARD -->
+<a id="customFlashcard" class="card" href="javascript:void(0)">
+  <h3>🃏 Custom Flashcard</h3>
+  <p>
+    Set kartu reflektif yang disesuaikan untuk pasangan,
+    keluarga, atau circle kecil — untuk membuka obrolan yang jarang terjadi.
+  </p>
+  <span class="cta">Request custom →</span>
+</a>
+
+<!-- CUSTOM QUIZ -->
+<a id="customQuiz" class="card" href="javascript:void(0)">
+  <h3>🪞 Custom Quiz</h3>
+  <p>
+    Alur pertanyaan personal untuk refleksi diri,
+    pasangan, atau relasi tertentu — bukan untuk skor, tapi kesadaran.
+  </p>
+  <span class="cta">Request custom →</span>
+</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- SUPPORT -->
+<div class="section">
+  <h2>Dukung Wewith</h2>
+  <p class="desc">
+    Dukunganmu membantu ruang ini tetap hidup.
+  </p>
+
+  <a href="https://trakteer.id/wewith/link" class="cta-main">
+    Support Wewith
+  </a>
+</div>
+
+<footer>
+  © Wewith — Hub
+</footer>
+
+<script>
+  const userAgent = navigator.userAgent.toLowerCase();
+  const isMobile = /mobile|android|iphone|ipad/.test(userAgent);
+
+  const email = "hiimwewith@gmail.com";
+
+  const links = [
+    {
+      id: "customTribute",
+      subject: "Custom Tribute — Wewith"
+    },
+    {
+      id: "customFlashcard",
+      subject: "Custom Flashcard — Wewith"
+    },
+    {
+      id: "customQuiz",
+      subject: "Custom Quiz — Wewith"
+    }
+  ];
+
+  links.forEach(item => {
+    const el = document.getElementById(item.id);
+    if (!el) return;
+
+    if (isMobile) {
+      el.href = `mailto:${email}?subject=${encodeURIComponent(item.subject)}`;
+    } else {
+      el.href =
+        `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(item.subject)}`;
+      el.target = "_blank";
+    }
+  });
+</script>
+
+
+</body>
+</html>
